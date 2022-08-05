@@ -155,7 +155,6 @@ class GeoHelper
         $search = preg_replace("/[^\d\w\- ]+/ui", ' ', $this->search); // Удаляем знаки препинания
         $search = preg_replace('/\s+/i', ' ', $search); // Удаляем двойные пробелы
         $search = str_replace([' ', '&nbsp;', '&amp;nbsp;'], ' ', $search);
-        $search = str_replace([' ', '&nbsp;', '&amp;nbsp;'], ' ', $search);
         $search = strip_tags($search);
 
         return trim($search);
